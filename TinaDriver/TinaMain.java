@@ -1,16 +1,31 @@
-
 /**
  * Write a description of class TinaMain here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Christina Martinez
+ * @version 1.0
  */
 public class TinaMain
 {
     public static void main(String[] args)
     {
-        Tina tina = new Tina();
+        Tina tina = new Tina("Clooney");
         tina.sayHello();
-        System.out.println("5+x=" + tina.sampleMethod(5));
+        Tina tina2 = new Tina("BabyCake");
+        Tina tina3;                                     // this is a comment - this line declares a variable tina3 of type Tina
+        tina3 = new Tina("Gypsy");                      // this line instantiates tina3
+        String margie = "margie";                       // this is the correct way to instantiate a string            
+        String steve = new String("steve");             // this works but dont do it this way
+        Tina tina4 = new Tina(margie);
+        Tina tina75;
+        tina75 = new Tina(steve);
+        tina.sayHello();
+        tina2.sayHello();
+        tina3.sayHello();
+        tina4.sayHello();
+        tina75.sayHello();
+        Tina abigail = new Tina("Jason");
+        Tina roger = new Tina("7");
+        
+        // "margie" == new String("margie");
     }
 }

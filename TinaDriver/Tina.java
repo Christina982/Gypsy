@@ -8,25 +8,17 @@
 public class Tina
 {
     // instance variables - replace the example below with your own
-    private int x;
-
     
-    public Tina()
+    private String name;
+    
+    public Tina(String name)
     {
-        // initialise instance variables
-        x = 7;
-    }
+        this.name = name;
+           
+    }   
 
-    
-    
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
-    
     public void sayHello()
     {
-        System.out.println("hello world");
+        System.out.println("hello " + this.name);
     }
 }
