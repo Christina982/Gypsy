@@ -26,6 +26,17 @@ public class TinaMain
         Tina abigail = new Tina("Jason");
         Tina roger = new Tina("7");
         
+        Car color;
+        color = new Car();
+        System.out.println("my car color is " + color.getColor());
+        color.setColor("blue");
+        System.out.println("my car color is " + color.getColor());
+        System.out.println("my car shape is " + color.getShape());
+        color.setShape("truck");
+        System.out.println("my car shape is " + color.getShape());
+        System.out.println("my car door is " + color.getDoors());
+        color.setDoors(2);
+        System.out.println("my car door is " + color.getDoors());
         // "margie" == new String("margie");
     }
 }
