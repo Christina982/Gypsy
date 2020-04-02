@@ -3,7 +3,10 @@
  *
  * @author Christina Martinez
  * @version 1.0
- */
+*/
+
+import java.util.Scanner;
+
 public class TinaMain
 {
     public static void main(String[] args)
@@ -26,6 +29,14 @@ public class TinaMain
         Tina abigail = new Tina("Jason");
         Tina roger = new Tina("7");
         
+        Scanner input = new Scanner(System.in);
+        Jason jMan = new Jason();
+        
+        while (true) {
+        System.out.println("Ask me any question");
+        String question = input.nextLine();
+        jMan.askJasonAnyQuestion(question);
+    }   
         // "margie" == new String("margie");
     }
 }
