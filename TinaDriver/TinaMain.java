@@ -28,15 +28,31 @@ public class TinaMain
         tina75.sayHello();
         Tina abigail = new Tina("Jason");
         Tina roger = new Tina("7");
-        
+
         Scanner input = new Scanner(System.in);
         Jason jMan = new Jason();
         
         while (true) {
-        System.out.println("Ask me any question");
-        String question = input.nextLine();
-        jMan.askJasonAnyQuestion(question);
-    }   
+            System.out.println("Ask me any question");
+            String question = input.nextLine();
+            if ("exit".equals(question)) break;
+            jMan.askJasonAnyQuestion(question);
+        }
+        
+        
+        System.out.println("Good Bye, Sucka!!!!");
+//        Car color;
+//        color = new Car();
+//        System.out.println("my car color is " + color.getColor());
+//        color.setColor("blue");
+//        System.out.println("my car color is " + color.getColor());
+//        System.out.println("my car shape is " + color.getShape());
+//        color.setShape("truck");
+//        System.out.println("my car shape is " + color.getShape());
+//        System.out.println("my car door is " + color.getDoors());
+//        color.setDoors(2);
+//        System.out.println("my car door is " + color.getDoors());
+
         // "margie" == new String("margie");
     }
 }
