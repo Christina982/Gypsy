@@ -14,7 +14,6 @@ public class Tina
     public Tina(String name)
     {
         this.name = name;
-           
     }   
 
     public void sayHello()
