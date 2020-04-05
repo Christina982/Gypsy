@@ -51,12 +51,12 @@ public abstract class AdultBeverages {
 
 	public String toString(String childToString) {
 		String divider = 
-			"***************************************************";
-		return divider + "\n"
-			+ "\tName:\t\t\t\t\t" + this.name
-			+ "\tAlcohol By Volume:\t\t" + this.abv
-			+ "\tDescription:\t\t\t" + this.desc
-			+ childToString
-			+ divider;
+			"*********************************************************************************************";
+		return divider + "\n" 
+			+ "\n\tName:\t\t\t\t" + this.name
+			+ "\n\tAlcohol By Volume:\t\t" + this.abv
+			+ "\n\tDescription:\t\t\t" + this.desc
+			+ "\n" + childToString
+			+ "\n\n" + divider;
 	} 
 }

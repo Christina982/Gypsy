@@ -16,7 +16,7 @@ public class Wine extends AdultBeverages {
 	private String color;
 	private String region;
 	private String characteristics;
-	private short year;
+	private int year;
 	private NitrateLevel nitrateLevel;
 	private boolean kosher;
 
@@ -31,8 +31,7 @@ public class Wine extends AdultBeverages {
 		this.kosher = false;
 	}
 
-	public Wine(String name, double abv, String desc, String grape, String color, String region,
-			String characteristics, short year, String nitrateLevel, boolean Kosher) {
+	public Wine(String name, double abv, String desc, String grape, String color, String region, String characteristics, int year, String nitrateLevel, boolean Kosher) {
 		super(name, abv, desc);
 		this.grape = grape;
 		this.color = this.getValidColor(color);
@@ -59,7 +58,7 @@ public class Wine extends AdultBeverages {
 		this.characteristics = characteristics;
 	}
 
-	public void setYear(short year) {
+	public void setYear(int year) {
 		this.year = year;
 	}
 
@@ -87,7 +86,7 @@ public class Wine extends AdultBeverages {
 		return this.characteristics;
 	}
 
-	public short getYear() {
+	public int getYear() {
 		return this.year;
 	}
 
@@ -125,12 +124,12 @@ public class Wine extends AdultBeverages {
 
 	public String toString() {
 		String kosher = (this.kosher) ? "Yes" : "No";
-		return "\tGrape:\t\t\t\t\t" + this.grape
-			+ "\tColor:\t\t\t\t\t" + this.color
-			+ "\tRegion:\t\t\t\t" + this.region
-			+ "\tCharacteristics:\t\t\t" + this.characteristics
-			+ "\tNitrates:\t\t\t\t" + this.stringifyNitrateLevel(this.nitrateLevel)
-			+ "\tKosher:\t\t\t\t" + kosher;
-				
+		String childToString = "\tGrape:\t\t\t\t" + this.grape
+			+ "\n\tColor:\t\t\t\t" + this.color
+			+ "\n\tRegion:\t\t\t\t" + this.region
+			+ "\n\tCharacteristics:\t\t" + this.characteristics
+			+ "\n\tNitrates:\t\t\t" + this.stringifyNitrateLevel(this.nitrateLevel)
+			+ "\n\tKosher:\t\t\t\t" + kosher;
+		return super.toString(childToString);
 	}
 }
