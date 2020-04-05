@@ -28,6 +28,7 @@ public class TinaMain
         tina75.sayHello();
         Tina abigail = new Tina("Jason");
         Tina roger = new Tina("7");
+        short number = 78;
 
         Scanner input = new Scanner(System.in);
         Jason jMan = new Jason();
