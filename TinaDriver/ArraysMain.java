@@ -77,7 +77,7 @@ public class ArraysMain {
 		System.out.println(anotherIntArray[1]);	// output: 1934
 		System.out.println(anotherIntArray[2]);	// output: -24
 		System.out.println(anotherIntArray[3]);	// output: 1934
-		System.out.println(anotherIntArray[4]);	// output: theHashSlingingSlasher
+		System.out.println(anotherIntArray[4]);	// output: 7 
 
 	}
 }
