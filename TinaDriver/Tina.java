@@ -1,4 +1,4 @@
-
+package Gypsy.TinaDriver;
 /**
  * Write a description of class TinaDriver here.
  *
@@ -11,6 +11,10 @@ public class Tina
     
     private String name;
     
+    public Tina() {
+    	name = "I do not have a name";
+    }
+
     public Tina(String name)
     {
         this.name = name;
