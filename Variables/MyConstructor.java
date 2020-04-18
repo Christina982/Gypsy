@@ -1,4 +1,4 @@
-package Gypsy.MyConstructor;
+package com.lesson2.varfunct;
 /**
  * This class gives a brief overview of Constructor in java
  *

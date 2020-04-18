@@ -5,7 +5,7 @@
  * @version 1.0
  * @since 4/11/2020
  */
-import MyFunctions.MyFunctions;
+import com.lesson2.varfunct.MyFunctions; 
 import java.util.Scanner;
 
 public class FunctionsDriver {

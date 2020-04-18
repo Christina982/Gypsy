@@ -1,4 +1,4 @@
-package MyFunctions;
+package com.lesson2.varfunct;
 
 /**
  * This is a brief overview of Functions and how they work in java
