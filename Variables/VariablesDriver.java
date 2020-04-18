@@ -1,4 +1,3 @@
-package Gypsy.Variables;
 /**
  * General explanation of how variables work in java
  *
