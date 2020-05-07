@@ -1,0 +1,33 @@
+Steps to push changes to git repo
+
+	git repo - is the online repo(github, bitbucket, gitlab)
+	any other time means local git/ gitBash
+
+	1. make sure you are on the branch you want to push to
+	2. git add <files  to add to the commit>
+		- putting letters(files) in the envelope
+	3. git commit to commit added files
+		- sealing the envelop
+	4. git push pushes commits to the repo
+	**** make sure your branch has the latest code(latest code in development)
+		- after(or before pushing) checkout develop locally
+		- git pull while on develop
+		- git checkout branch you are working on(shortcut: "git checkout -")
+		- git merge develop
+		- git push(so that current branch is updated in the repo)
+
+	git commands:
+		- git branch <name of branch>
+			- will create branch, but wont make that branch current branch
+		- git checkout <branch name>
+			- will move to branch named
+		- git checkout -b <branch name>
+			- creates a new branch with branch named and moves to new branch
+		- git branch -m <branch name>
+			- will rename current branch to branch named
+		- git branch -d <branch name>
+			- will delete branch named
+			- "-D" force delete
+		- git status
+			- will show current state of the branch(files commited or not commited)
+	
