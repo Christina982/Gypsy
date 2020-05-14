@@ -5,62 +5,63 @@
  */
 
 public class ObjectLessonDriver {
-    
-    public static void main(String ... args) {
-        
-        // initialize an object of type ObjectLesson, name it ol1
-        ObjectLesson obj = ol1;
-        
-        // print ol1 to the screen
-        System.out.println("ol1");
 
-        // declare an object of type ObjectLesson, name it ol2
-        ObjectLesson obj = ol2;
+	public static void main(String ... args) {
+		
+		// initialize an object of type ObjectLesson, name it ol1
+	 	ObjectLesson ol1 = new ObjectLesson();		
 
-        // initialize an object of type String with the value "Yo Mama" and name it ol2Name
-        String ol2Name = ("Yo Mama");
+		// print ol1 to the screen
+		System.out.println(ol1);
 
-        // initialize a primitive of type int to the value 47 and name it ol2Age
-        int ol2Age = 47;
+		// declare an object of type ObjectLesson, name it ol2
+		ObjectLesson ol2;
 
-        // assing ol2 to an instantiation of type ObjectLesson and pass the arguments ol2Name, ol2Age
-        int  ol2 = ("ol2Name, ol2Age");
+		// initialize an object of type String with the value "Yo Mama" and name it ol2Name
+		String ol2Name = "Yo Mama";
 
-        // print ol2 to the screen
-        System.out.println(ol2);
+		// initialize a primitive of type int to the value 47 and name it ol2Age
+		int ol2Age = 47;
 
-        // assign the name "Yo Papa" to the variable ol2Name
-        int ol2 = ("Yo Papa");
+		// assing ol2 to an instantiation of type ObjectLesson and pass the arguments ol2Name, ol2Age
+		ol2 = new ObjectLesson(ol2Name, ol2Age);
 
-        // print ol2 to the screen
-        System.out.println("ol2");
+		// print ol2 to the screen
+		System.out.println(ol2.toString());
 
-        // call ol1's mutator method to SET the value of it's name to "Ponelope"
-        ol1.objectName = Ponelope;
-        
-        // call ol1's mutator method to SET the value of it's age to 12
-        ol1.objectAge = 12;       
+		// assign the name "Yo Papa" to the variable ol2Name
+		ol2Name = "Yo Papa";
 
-        // print ol1 to the screen
-        System.out.println(ol1);
+		// print ol2 to the screen
+		System.out.println(ol2);
 
-        // create a variable called ol1Name of type string and assign it using ol1's accessor method to GET it's name
-        return string.ol1Name;        
+		// call ol1's mutator method to SET the value of it's name to "Ponelope"
+		ol1.setObjectName("Ponelope");
+		
+		// call ol1's mutator method to SET the value of it's age to 12
+		ol1.setObjectAge(12);
 
-        // create as variable called ol1Age of type int and assign it using ol1's accessor method to GET it's age
-        return int.ol1Age;
+		// print ol1 to the screen
+		System.out.println(ol1.toString());
 
-        String nameAndAge = "Name: " + ol1Name + ", Age: " + ol1Age;
-        // guess what the value of nameAndAge should be, type your guess between the quotes
-        String myGuess = "Name: Ponelope , Age: 12 ";
-        System.out.println(nameAndAge);
-        System.out.println(myGuess);
-        // assign the following boolean a value by calling the String.equals function to compare nameAndAge and myGuess
-        boolean myGuessWasCorrect = str.equalsnameAndAge+myGuess;
-        System.out.println("My guess was correct: " + myGuessWasCorrect);
-        String tooMuchWhiteSpace = "          Por que, mija!!!            ";
-        // create a new string called noWhiteSpace and assign it a trimmed version of tooMuchWhiteSpace
-        String.trim noWhiteSpace = "         Por que, mija!!!            ";
+		// create a variable called ol1Name of type string and assign it using ol1's accessor method to GET it's name
+		String ol1Name = ol1.getObjectName();
+
+		// create as variable called ol1Age of type int and assign it using ol1's accessor method to GET it's age
+		int ol1Age = ol1.getObjectAge();
+
+		String nameAndAge = "Name: " + ol1Name + ", Age: " + ol1Age;
+		// guess what the value of nameAndAge should be, type your guess between the quotes
+		String myGuess = "Name: Ponelope, Age: 12";
+		System.out.println(nameAndAge);
+		System.out.println(myGuess);
+		// assign the following boolean a value by calling the String.equals function to compare nameAndAge and myGuess
+		boolean myGuessWasCorrect = nameAndAge.equals(myGuess);
+		System.out.println("My guess was correct: " + myGuessWasCorrect);
+		String tooMuchWhiteSpace = "          Por que, mija!!!            ";
+		// create a new string called noWhiteSpace and assign it a trimmed version of the varialbe tooMuchWhiteSpace
+		String noWhiteSpace = tooMuchWhiteSpace.trim();
+>>>>>>> Stashed changes
 
         System.out.println("*****************" + tooMuchWhiteSpace + "**********************");
         System.out.println("*****************" + noWhiteSpace + "**********************");
