@@ -1,0 +1,42 @@
+
+	 **** This file has some guidlines and notes on instantiating objects and primitive types in Java
+
+
+	 How to instantiate an object:
+	 	- instantitaite - new <Object Type>();
+		- other words for instantiate: new, new an Object, create object
+		- *** we do not "new" primitive types
+
+		ie:
+			new Object();    		// creates a new Object of type "Object"
+			new Tina("name", "age"); 	// creates a new Object of type "Tina"
+			new Car(); 			// creates a new Object of type "Car"
+			new ArrayList();
+			new Person();
+	How to declare a variable:
+		- creates a variable or placeholer for some data type
+			- the data type can be a primitive or an Object
+		- we declare by first stating the type, then we give it a name
+			- <Object/primitive type> <variable name>
+
+		ie:
+			String myString;
+			int myInt;
+			Tina margieJr;
+
+	Initialization:
+		- *** this is different than an instantiation
+		- an Initialization is a declaration + an instantiation
+		- <Declaration> = <Initialization/primitive>
+
+		ie: 
+			Tina margieJunior = new Tina();
+			int myInt = 47;
+			String myString = "Some string value, *** note: this is not a primitive, it is still an object";
+			// the above is an object becuase the complier creates a "new String() when it sees ""
+			String otherString = "instantiates a string"
+
+	Other notes:
+		- primitive types are always declared with a lower case type(int, char, boolean)
+		- primitive types do not need to be "newed"/instantiated\
+
